@@ -7,8 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <StackPanel>
-        <Label>Hello World</Label>
-        <Button>Click Me</Button>
+        <Label>Hello Sunjay</Label>
+        <Button>
+            <Button.Background>
+                <SolidColorBrush Color="Red"/>
+            </Button.Background>
+        </Button>
     </StackPanel>
     
 </Window>

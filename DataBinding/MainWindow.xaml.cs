@@ -16,14 +16,13 @@ namespace DataBinding
     /// </summary>
     public partial class MainWindow : Window
     {
-        private Person _insidePerson;
-        public Person otherPerson;
+        private Person _person;
 
         public MainWindow()
         {
             InitializeComponent();
 
-            Person person = new Person
+            _person = new Person
             {
                 Name = "Jamie",
                 Email = "Jamie@123.net",

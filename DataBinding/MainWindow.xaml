@@ -7,6 +7,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
 
+        <StackPanel Grid.Column="0" Margin="10">
+            <Label Content="Name" FontSize="18" HorizontalAlignment="Left" Margin="5"/>
+            <Label Content="Address" FontSize="18" HorizontalAlignment="Left" Margin="5"/>
+            <Label Content="Email" FontSize="18" HorizontalAlignment="Left" Margin="5"/>
+            <Label Content="Phone" FontSize="18" HorizontalAlignment="Left" Margin="5"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Margin="10">
+            <Label Content="Name" FontSize="18" FontStyle="Italic" HorizontalAlignment="Left" Margin="5"/>
+            <Label Content="Address" FontSize="18" FontStyle="Italic" HorizontalAlignment="Left" Margin="5"/>
+            <Label Content="Email" FontSize="18" FontStyle="Italic" HorizontalAlignment="Left" Margin="5"/>
+            <Label Content="Phone" FontSize="18" FontStyle="Italic" HorizontalAlignment="Left" Margin="5"/>
+        </StackPanel>
     </Grid>
 </Window>

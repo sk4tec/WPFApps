@@ -16,9 +16,30 @@ namespace DataBinding
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Person _insidePerson;
+        public Person otherPerson;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            Person person = new Person
+            {
+                Name = "Jamie",
+                Email = "Jamie@123.net",
+                Address = "Wall Street",
+                Number = 12345
+            };
+
+            this.DataContext = person;
         }
+    }
+
+    public class Person
+    {
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Address { get; set; }
+        public int? Number { get; set; }
     }
 }

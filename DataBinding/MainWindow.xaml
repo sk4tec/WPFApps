@@ -20,10 +20,10 @@
         </StackPanel>
 
         <StackPanel Grid.Column="1" Margin="10">
-            <Label Content="{Binding Name}" FontSize="18" FontStyle="Italic" HorizontalAlignment="Left" Margin="5"/>
-            <Label Content="{Binding Address}" FontSize="18" FontStyle="Italic" HorizontalAlignment="Left" Margin="5"/>
-            <Label Content="{Binding Email}" FontSize="18" FontStyle="Italic" HorizontalAlignment="Left" Margin="5"/>
-            <Label Content="{Binding Number}" FontSize="18" FontStyle="Italic" HorizontalAlignment="Left" Margin="5"/>
+            <TextBox Text="{Binding Name}" FontSize="18" FontStyle="Italic" HorizontalAlignment="Left" Margin="5"/>
+            <TextBox Text="{Binding Address}" FontSize="18" FontStyle="Italic" HorizontalAlignment="Left" Margin="5"/>
+            <TextBox Text="{Binding Email}" FontSize="18" FontStyle="Italic" HorizontalAlignment="Left" Margin="5"/>
+            <TextBox Text="{Binding Number}" FontSize="18" FontStyle="Italic" HorizontalAlignment="Left" Margin="5"/>
         </StackPanel>
     </Grid>
 </Window>

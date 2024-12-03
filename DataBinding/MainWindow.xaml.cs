@@ -30,7 +30,12 @@ namespace DataBinding
                 Number = 12345
             };
 
-            this.DataContext = person;
+            this.DataContext = _person;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show($"{_person.Name}");
         }
     }
 

@@ -24,6 +24,8 @@
             <TextBox Text="{Binding Address}" FontSize="18" FontStyle="Italic" HorizontalAlignment="Left" Margin="5"/>
             <TextBox Text="{Binding Email}" FontSize="18" FontStyle="Italic" HorizontalAlignment="Left" Margin="5"/>
             <TextBox Text="{Binding Number}" FontSize="18" FontStyle="Italic" HorizontalAlignment="Left" Margin="5"/>
+            <Button Height="50" Width="100" Content="Show" Click="Button_Click" HorizontalAlignment="Left" Margin="5"/>
         </StackPanel>
+
     </Grid>
 </Window>

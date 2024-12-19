@@ -6,10 +6,6 @@
         xmlns:local="clr-namespace:ModernDesign"
         mc:Ignorable="d"
         Height="450" Width="920"
-        WindowStyle="None"
-        ResizeMode="NoResize"
-        Background="Transparent"
-        AllowsTransparency="True"
         >
     <Border Background="#272527">
         <Grid>
@@ -27,7 +23,15 @@
                    VerticalAlignment="Center"
                    HorizontalAlignment="Center"
                    Foreground="White"
-                   FontSize="22"/>
+                   FontSize="22" Margin="20,0,0,0"/>
+
+            <StackPanel Grid.Row="1">
+                <RadioButton Content="Home"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}"/>
+            </StackPanel>
         </Grid>
     </Border>
 </Window>

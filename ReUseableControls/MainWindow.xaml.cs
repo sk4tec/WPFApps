@@ -23,7 +23,17 @@ namespace ReUseableControls
 
         private void OnJoinBasicClicked(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("You Joined the basic tier");
+            MessageBox.Show("You Joined the Basic tier.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
         }
+
+        private void OnJoinProClicked(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("You Joined the Pro tier.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+        private void OnJoinEnterpriseClicked(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("You Joined the Enterprise tier.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
     }
 }

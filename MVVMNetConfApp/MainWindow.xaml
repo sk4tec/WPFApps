@@ -1,0 +1,22 @@
+﻿<Window x:Class="MVVMNetConfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MVVMNetConfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" 
+        Height="450"
+        Width="800"
+        ThemeMode="System"> <!-- Use Theme and styles -->
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <!-- Use larger font styles from WinUI with WPF Theming -->
+        <TextBlock Text="Counter" Style="{DynamicResource TitleTextBlockStyle}"/> <!-- Use WinUI 3 styles -->
+        <TextBlock Margin="0, 8, 0, 8" Text="0" Style="{DynamicResource SubTitleBlockStyle}"/>
+
+        <StackPanel Orientation="Horizontal">
+            <Button Margin="0, 0, 8, 0" Content="Increment"/>
+            <Button Content="Decrement"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

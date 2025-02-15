@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:SampleXAML"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+    <Grid Background="DarkGreen">
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock Text="Hello, this is a TextBlock in the MainWindow!" FontSize="24" HorizontalAlignment="Center" Padding="10" Background="DarkGoldenrod"/>
+            <local:TextUserControl Padding="10" ControlText="This is some Custom Text set outside"/>
+        </StackPanel>
     </Grid>
 </Window>
